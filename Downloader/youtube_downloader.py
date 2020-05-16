@@ -50,10 +50,11 @@ class Youtube_mp3():
         print("Downloading: {0}.".format(self.dict_names[int(num)]))
         print(song_name)
         file_name = song_name + '.m4a'
+        new_file_name = file_name.replace("/", " ")
         if song_name == '':
             audio.download(remux_audio=True)
         else:
-            audio.download(filepath = file_name, remux_audio=True)
+            audio.download(filepath = new_file_name, remux_audio=True)
 
 
     def bulk_download(self, url):
@@ -64,10 +65,11 @@ class Youtube_mp3():
         print(song_name)
  #       file_name = song_name[:11] + '.m4a'
         file_name = song_name + '.m4a'
+        new_file_name = file_name.replace("/", " ")
         if song_name == '':
             audio.download(remux_audio=True)
         else:
-            audio.download(filepath = file_name, remux_audio=True)
+            audio.download(filepath = new_file_name, remux_audio=True)
 
     def add_playlist(self, search_query):
         url = self.url_search(search_query, max_search=1)
