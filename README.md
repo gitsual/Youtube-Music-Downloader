@@ -69,7 +69,7 @@ Audio remuxed.
 
 - Check `Downloader` if you miss some song or the program crashes/freezes without finishing
     - `ls Downloader/`
-    - If you see some song `.m4a` here, just run `./move.sh` to move it to `Music` folder  
+    - If you see some `.m4a` song there, just run `./move.sh` to move it into the `Music` folder  
 - Play the music with `./play.sh`
     - If you are not familiarized with cmus, just press `5`, move up and down with the arrows and play the song with `Enter`  
 
